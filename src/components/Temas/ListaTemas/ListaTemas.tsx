@@ -34,7 +34,7 @@ function ListaTemas() {
     }, [temas.length])
 
     return (
-        <Container fluid className='p-2'>
+        <Container className='p-2'>
             <Row xs={1} md={2} className="g-2">
                 {
                     temas.map(tema => (

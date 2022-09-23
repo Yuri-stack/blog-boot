@@ -94,9 +94,10 @@ function FormularioTema() {
         <Container fluid>
             <Col className="d-flex flex-column justify-content-center align-items-center mt-5">
 
-                <h1 className="text-center">Formulário de Tema</h1>
-
                 <Form onSubmit={gerarNovoTema} className="w-50">
+
+                    <h1 className="text-center">Formulário de Tema</h1>
+
                     <Form.Group className="mb-3">
                         <Form.Label className="fs-6">Nome/Descrição:</Form.Label>
                         <Form.Control

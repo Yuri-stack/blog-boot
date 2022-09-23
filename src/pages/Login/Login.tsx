@@ -41,7 +41,7 @@ function Login() {
 
                     <h1 className="text-center">Entrar</h1>
 
-                    <Form onSubmit={login} className="w-75">
+                    <Form onSubmit={login} className="w-50">
 
                         <Form.Group className="mb-3">
                             <Form.Label className="fs-6">Usuário</Form.Label>
@@ -60,7 +60,7 @@ function Login() {
                         </Form.Group>
 
                         <div className="d-flex justify-content-center mt-4">
-                            <Button variant="primary" type="submit" className="w-25 fs-6">Logar</Button>
+                            <Button variant="primary" type="submit" className="w-50 fs-6">Logar</Button>
                         </div>
                     </Form>
 

@@ -1,5 +1,6 @@
 import { useEffect, useContext } from "react"
 import { useNavigate } from 'react-router-dom'
+import { Button, Container, Col, Form } from "react-bootstrap"
 
 import { AuthContext } from "../../contexts/AuthContext"
 import { toastAlerta } from "../../utils/toastAlerta"
@@ -18,7 +19,9 @@ function Perfil() {
     }, [usuario.token])
 
     return (
-        <div>Perfil</div>
+        <Container fluid>
+
+        </Container>
     )
 }
 

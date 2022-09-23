@@ -15,7 +15,7 @@ import DeletarTema from "./components/Temas/DeletarTema/DeletarTema"
 import FormularioTema from "./components/Temas/FormularioTema/FormularioTema"
 import ListaPostagens from "./components/Postagens/ListaPostagens/ListaPostagens"
 import DeletarPostagem from "./components/Postagens/DeletarPostagem/DeletarPostagem"
-import FormularioPostagem from "./components/Postagens/FormulatioPostagem/FormularioPostagem"
+import FormularioPostagem from "./components/Postagens/FormularioPostagem/FormularioPostagem"
 
 // Importando o CSS do Boostrap
 import 'bootstrap/dist/css/bootstrap.min.css';

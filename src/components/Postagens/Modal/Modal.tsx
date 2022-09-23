@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { Button, Modal as ModalBoot, ModalFooter, ModalBody } from 'react-bootstrap';
-import FormularioPostagem from '../FormulatioPostagem/FormularioPostagem';
+import FormularioPostagem from '../FormularioPostagem/FormularioPostagem';
 
 import './Modal.css'
 
 function Modal() {
     const [mostrar, setMostrar] = useState(false);
 
-    function mostrarEsconderModal(){
+    function mostrarEsconderModal() {
         setMostrar(!mostrar)
     }
 
@@ -17,10 +17,9 @@ function Modal() {
                 Nova Postagem
             </Button>
 
-            <ModalBoot show={mostrar} onHide={mostrarEsconderModal}>
-                <ModalBoot.Body className="x">
-                {/* <ModalBoot.Body> */}
-                    <FormularioPostagem />
+            <ModalBoot show={mostrar} onHide={mostrarEsconderModal} centered size='lg'>
+                <ModalBoot.Body >
+                    <FormularioPostagem  />
                 </ModalBoot.Body>
             </ModalBoot>
         </>
