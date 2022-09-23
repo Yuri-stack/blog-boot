@@ -1,0 +1,32 @@
+.perfil-container{
+    min-height: 480px;
+    border-radius: 32px;
+    margin: 24px;
+    overflow: hidden;
+}
+
+
+.perfil-capa{
+    width: 100%;
+    height: 240px;
+    margin-top: -104px;
+    object-fit: cover;
+    border-radius: 32px 32px 0 0;
+    border-bottom: 5px solid white;
+}
+
+.perfil-foto{
+    max-width: 208px;
+    max-height: 208px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 50% 50%;
+    margin-top: -104px;
+}
+
+.perfil-titulos{
+    margin: 16px 0 0 0;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}

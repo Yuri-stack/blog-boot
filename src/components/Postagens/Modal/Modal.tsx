@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, Modal as ModalBoot, ModalFooter, ModalBody } from 'react-bootstrap';
+import { Button, Modal as ModalBoot } from 'react-bootstrap';
 import FormularioPostagem from '../FormularioPostagem/FormularioPostagem';
 
 import './Modal.css'
