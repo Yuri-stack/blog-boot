@@ -81,9 +81,9 @@ function FormularioPostagem() {
     function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
         setPostagem({
             ...postagem,
+            [e.target.name]: e.target.value,
             tema: tema,
-            usuario: usuario,
-            [e.target.name]: e.target.value
+            usuario: usuario
         })
     }
 
@@ -128,6 +128,8 @@ function FormularioPostagem() {
         }
     }
 
+    const carregandoTema = tema.descricao === ""
+
     return (
         <Container fluid>
             <Col className="d-flex flex-column justify-content-center align-items-center mt-5">
@@ -139,7 +141,7 @@ function FormularioPostagem() {
                     <Form.Group className="mb-3">
                         <Form.Label className="fs-6">Título</Form.Label>
                         <Form.Control
-                            type="text" placeholder="Insira o título da Postagem" name="titulo"
+                            type="text" placeholder="Insira no mínimo 5 caracteres" name="titulo" required
                             value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </Form.Group>
@@ -147,7 +149,7 @@ function FormularioPostagem() {
                     <Form.Group className="mb-3">
                         <Form.Label className="fs-6">Texto</Form.Label>
                         <Form.Control
-                            type="text" placeholder="Insira o texto da Postagem" name="texto"
+                            type="text" placeholder="Insira no mínimo 10 caracteres" name="texto" required
                             value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </Form.Group>
@@ -163,8 +165,14 @@ function FormularioPostagem() {
                         }
                     </Form.Select>
 
-                    <Button variant="primary" type="submit" className="fs-6 btn-action">
-                        Concluir
+                    <Button 
+                        variant="primary" 
+                        type="submit" 
+                        className="fs-6"
+                        disabled={carregandoTema}
+                    >
+                        { carregandoTema ? <span>Carregando</span> : <span>Concluir</span>}
+                        
                     </Button>
                 </Form>
 

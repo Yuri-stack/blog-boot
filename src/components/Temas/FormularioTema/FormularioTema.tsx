@@ -100,7 +100,7 @@ function FormularioTema() {
                     <Form.Group className="mb-3">
                         <Form.Label className="fs-6">Nome/Descrição:</Form.Label>
                         <Form.Control
-                            type="text" placeholder="Insira o nome/descrição do Tema" name="descricao"
+                            type="text" placeholder="Insira no mínimo 5 caracteres" name="descricao" required
                             value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </Form.Group>

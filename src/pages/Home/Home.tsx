@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 import { Container, Col, Row, Button } from "react-bootstrap"
 import Modal from "../../components/Postagens/Modal/Modal"
+import TabPostagem from "../../components/Postagens/TabPostagem/TabPostagem"
 
 function Home() {
   return (
@@ -27,6 +28,13 @@ function Home() {
             alt="Três pessoas sentadas conversando"
             width="500px" height="500px"
           />
+        </Col>
+
+        <Col xs={12} sm={6} 
+          className="
+            d-flex flex-column justify-content-center 
+            w-75 mx-auto">
+          <TabPostagem />
         </Col>
 
       </Row>
